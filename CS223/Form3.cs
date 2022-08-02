@@ -27,5 +27,10 @@ namespace CS223_LabSession_4
             }
             else { MessageBox.Show("Incorrect Credential"); }
         }
+
+        private void tb_pwd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

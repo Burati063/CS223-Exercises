@@ -118,5 +118,10 @@ namespace CS223_LabSession_4
         {
 
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

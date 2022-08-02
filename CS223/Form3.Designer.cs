@@ -55,9 +55,10 @@
             // 
             this.tb_pwd.Location = new System.Drawing.Point(165, 86);
             this.tb_pwd.Name = "tb_pwd";
-            this.tb_pwd.PasswordChar = 'Z';
+            this.tb_pwd.PasswordChar = '*';
             this.tb_pwd.Size = new System.Drawing.Size(100, 20);
             this.tb_pwd.TabIndex = 2;
+            this.tb_pwd.TextChanged += new System.EventHandler(this.tb_pwd_TextChanged);
             // 
             // label2
             // 
@@ -82,14 +83,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 150);
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = global::CS223_LabSession_4.Properties.Resources.icon;
+            this.ClientSize = new System.Drawing.Size(490, 200);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_pwd);
             this.Controls.Add(this.tb_usr);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
+            this.TransparencyKey = System.Drawing.Color.Red;
             this.ResumeLayout(false);
             this.PerformLayout();
 
