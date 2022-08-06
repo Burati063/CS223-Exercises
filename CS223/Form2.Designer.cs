@@ -58,6 +58,9 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_profile = new System.Windows.Forms.Label();
+            this.lbl_search = new System.Windows.Forms.Label();
+            this.tb_srch = new System.Windows.Forms.TextBox();
+            this.btn_srch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -66,7 +69,7 @@
             // lbl_number
             // 
             this.lbl_number.AutoSize = true;
-            this.lbl_number.Location = new System.Drawing.Point(121, 52);
+            this.lbl_number.Location = new System.Drawing.Point(104, 67);
             this.lbl_number.Name = "lbl_number";
             this.lbl_number.Size = new System.Drawing.Size(44, 13);
             this.lbl_number.TabIndex = 0;
@@ -76,7 +79,7 @@
             // lbl_date
             // 
             this.lbl_date.AutoSize = true;
-            this.lbl_date.Location = new System.Drawing.Point(302, 52);
+            this.lbl_date.Location = new System.Drawing.Point(302, 67);
             this.lbl_date.Name = "lbl_date";
             this.lbl_date.Size = new System.Drawing.Size(30, 13);
             this.lbl_date.TabIndex = 1;
@@ -85,7 +88,7 @@
             // lbl_sku
             // 
             this.lbl_sku.AutoSize = true;
-            this.lbl_sku.Location = new System.Drawing.Point(505, 52);
+            this.lbl_sku.Location = new System.Drawing.Point(499, 67);
             this.lbl_sku.Name = "lbl_sku";
             this.lbl_sku.Size = new System.Drawing.Size(29, 13);
             this.lbl_sku.TabIndex = 2;
@@ -161,7 +164,7 @@
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(480, 164);
+            this.btn_Add.Location = new System.Drawing.Point(516, 164);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(75, 23);
             this.btn_Add.TabIndex = 12;
@@ -327,15 +330,44 @@
             this.lbl_profile.Size = new System.Drawing.Size(0, 33);
             this.lbl_profile.TabIndex = 24;
             // 
+            // lbl_search
+            // 
+            this.lbl_search.AutoSize = true;
+            this.lbl_search.Location = new System.Drawing.Point(12, 9);
+            this.lbl_search.Name = "lbl_search";
+            this.lbl_search.Size = new System.Drawing.Size(65, 13);
+            this.lbl_search.TabIndex = 25;
+            this.lbl_search.Text = "Search here";
+            // 
+            // tb_srch
+            // 
+            this.tb_srch.Location = new System.Drawing.Point(12, 25);
+            this.tb_srch.Name = "tb_srch";
+            this.tb_srch.Size = new System.Drawing.Size(100, 20);
+            this.tb_srch.TabIndex = 26;
+            this.tb_srch.Text = "Enter Item Name";
+            // 
+            // btn_srch
+            // 
+            this.btn_srch.Location = new System.Drawing.Point(129, 22);
+            this.btn_srch.Name = "btn_srch";
+            this.btn_srch.Size = new System.Drawing.Size(75, 23);
+            this.btn_srch.TabIndex = 27;
+            this.btn_srch.Text = "Find";
+            this.btn_srch.UseVisualStyleBackColor = true;
+            this.btn_srch.Click += new System.EventHandler(this.btn_srch_Click);
+            // 
             // Form2
             // 
             this.AcceptButton = this.btn_Add;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Desktop;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CancelButton = this.btn_cancel;
             this.ClientSize = new System.Drawing.Size(951, 450);
+            this.Controls.Add(this.btn_srch);
+            this.Controls.Add(this.tb_srch);
+            this.Controls.Add(this.lbl_search);
             this.Controls.Add(this.lbl_profile);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.radioButton2);
@@ -360,11 +392,8 @@
             this.Controls.Add(this.lbl_sku);
             this.Controls.Add(this.lbl_date);
             this.Controls.Add(this.lbl_number);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FILL IT";
-            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -405,5 +434,8 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_profile;
+        private System.Windows.Forms.Button btn_srch;
+        private System.Windows.Forms.TextBox tb_srch;
+        private System.Windows.Forms.Label lbl_search;
     }
 }

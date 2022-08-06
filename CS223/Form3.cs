@@ -24,13 +24,12 @@ namespace CS223_LabSession_4
                 this.Hide();
                 Form2 f = new Form2(tb_usr.Text);
                 f.Show();
+                Form opened;
+                opened = Form3.ActiveForm;
+                if (opened != null)
+                    opened.Close();
             }
             else { MessageBox.Show("Incorrect Credential"); }
-        }
-
-        private void tb_pwd_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

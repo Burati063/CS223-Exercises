@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.label1 = new System.Windows.Forms.Label();
             this.tb_usr = new System.Windows.Forms.TextBox();
             this.tb_pwd = new System.Windows.Forms.TextBox();
@@ -37,57 +38,35 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 48);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "User Name";
             // 
             // tb_usr
             // 
-            this.tb_usr.Location = new System.Drawing.Point(165, 48);
+            resources.ApplyResources(this.tb_usr, "tb_usr");
             this.tb_usr.Name = "tb_usr";
-            this.tb_usr.Size = new System.Drawing.Size(100, 20);
-            this.tb_usr.TabIndex = 1;
             // 
             // tb_pwd
             // 
-            this.tb_pwd.Location = new System.Drawing.Point(165, 86);
+            resources.ApplyResources(this.tb_pwd, "tb_pwd");
             this.tb_pwd.Name = "tb_pwd";
-            this.tb_pwd.PasswordChar = '*';
-            this.tb_pwd.Size = new System.Drawing.Size(100, 20);
-            this.tb_pwd.TabIndex = 2;
-            this.tb_pwd.TextChanged += new System.EventHandler(this.tb_pwd_TextChanged);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 93);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Password";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(312, 115);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Sign In";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::CS223_LabSession_4.Properties.Resources.icon;
-            this.ClientSize = new System.Drawing.Size(490, 200);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_pwd);
@@ -95,9 +74,6 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
-            this.TransparencyKey = System.Drawing.Color.Red;
             this.ResumeLayout(false);
             this.PerformLayout();
 
