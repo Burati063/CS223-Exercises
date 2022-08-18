@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.2017
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS223 LabSession 4", "CS223 LabSession 4\CS223 LabSession 4.csproj", "{C5276D2B-9DBE-449A-9046-3F04A8EB25E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS223 .sln", "..\..\..\Downloads\CS223_Exercises-main (1)\CS223_Exercises-main\CS223 LabSession 4\CS223 .sln.csproj", "{C5276D2B-9DBE-449A-9046-3F04A8EB25E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
