@@ -16,7 +16,7 @@ namespace CS223_LabSession_4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new containerpage());
+            Application.Run(new Form2());
         }
     }
 }
