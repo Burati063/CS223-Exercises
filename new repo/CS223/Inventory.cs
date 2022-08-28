@@ -176,5 +176,10 @@ namespace CS223_LabSession_4
         {
 
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

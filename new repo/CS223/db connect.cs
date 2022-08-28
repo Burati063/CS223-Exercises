@@ -22,13 +22,17 @@ namespace CS223_LabSession_4
         {
             try
             {
+                String Query = "Insert into dbconnectivety values( 5,'june 6 1994',15,'yabsera',6,500)";
                 string connectionstring = "Data source = LAPTOP-TCEBUQVU ; initial catalog = dbconnectivety; Integrated security = true";
                 SqlConnection con = new SqlConnection(connectionstring);
                 con.Open();
-                MessageBox.Show("db connected");
+                SqlCommand cmd = new SqlCommand(Query, con);
+                int c = (int)cmd.ExecuteNonQuery();
+                MessageBox.Show(c.ToString() + " Number of rows inserted");
+             //   MessageBox.Show("db connected");
                 con.Close();
             }
-            catch (SqlException s) {MessageBox.Show("db not connected");
+            catch (SqlException s) {MessageBox.Show(s.Message);
             }
             }
 

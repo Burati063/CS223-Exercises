@@ -339,8 +339,7 @@
             // lbl_search
             // 
             this.lbl_search.Font = new System.Drawing.Font("Engravers MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_search.Image = global::CS223_LabSession_4.Properties.Resources.icon;
-            this.lbl_search.Location = new System.Drawing.Point(707, 29);
+            this.lbl_search.Location = new System.Drawing.Point(448, 30);
             this.lbl_search.Name = "lbl_search";
             this.lbl_search.Size = new System.Drawing.Size(172, 20);
             this.lbl_search.TabIndex = 25;
@@ -348,7 +347,7 @@
             // 
             // tb_srch
             // 
-            this.tb_srch.Location = new System.Drawing.Point(35, 3);
+            this.tb_srch.Location = new System.Drawing.Point(0, 3);
             this.tb_srch.Name = "tb_srch";
             this.tb_srch.Size = new System.Drawing.Size(155, 20);
             this.tb_srch.TabIndex = 26;
@@ -356,7 +355,7 @@
             // 
             // btn_srch
             // 
-            this.btn_srch.Location = new System.Drawing.Point(879, 29);
+            this.btn_srch.Location = new System.Drawing.Point(626, 30);
             this.btn_srch.Name = "btn_srch";
             this.btn_srch.Size = new System.Drawing.Size(75, 23);
             this.btn_srch.TabIndex = 27;
@@ -366,18 +365,18 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.tb_srch);
-            this.groupBox2.Location = new System.Drawing.Point(759, 0);
+            this.groupBox2.Location = new System.Drawing.Point(501, 0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(195, 23);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(466, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(29, 20);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -403,6 +402,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CancelButton = this.btn_cancel;
             this.ClientSize = new System.Drawing.Size(955, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_srch);
