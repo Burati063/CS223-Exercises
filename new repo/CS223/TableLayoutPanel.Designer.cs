@@ -47,7 +47,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.71698F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.28302F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
             this.tableLayoutPanel1.Controls.Add(this.button5, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.textBox4, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
@@ -68,7 +68,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(296, 230);
+            this.button5.Location = new System.Drawing.Point(295, 230);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 4;
@@ -78,7 +78,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(296, 67);
+            this.textBox4.Location = new System.Drawing.Point(295, 67);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(90, 157);
@@ -88,7 +88,7 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(52, 251);
+            this.label3.Location = new System.Drawing.Point(51, 251);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 3;
@@ -111,27 +111,27 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 139);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Certified by";
+            this.label2.Text = "given by";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 3);
+            this.textBox1.Location = new System.Drawing.Point(104, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(104, 20);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(105, 67);
+            this.textBox2.Location = new System.Drawing.Point(104, 67);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(105, 230);
+            this.textBox3.Location = new System.Drawing.Point(104, 230);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 6;
@@ -139,11 +139,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(296, 0);
+            this.label4.Location = new System.Drawing.Point(295, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Remark";
+            this.label4.Text = "Result";
             // 
             // maskedTextBox1
             // 
@@ -157,6 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.tableLayoutPanel1);
